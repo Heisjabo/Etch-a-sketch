@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(223, 220, 220);
+    color: #191919;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+.logo{
+    text-transform: uppercase;
+    background: linear-gradient(to right, blue, purple, red);
+    font-family: 'Poppins', sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.main-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.main-section #controls{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#colorPicker{
+    border: none;
+    width: 60px;
+    height: 30px;
+}
+
+#controls button{
+    background-color: white;
+    color: #191919;
+    border: none;
+    padding: 6px 0px;
+    cursor: pointer;
+    border-radius: 5px;   
+}
+
+#container {
+    background-color: white;
+    display: grid;
+    gap: 0;
+    width: 500px;
+    height: 500px;
+}
+
+/* .square {
+  border: 1px solid gray;
+} */
+
+footer{
+    text-align: center;
+    width: 100%;
+    padding: 30px 0;
+}
+footer p{
+    text-align: center;
+}
+
+.active{
+    background-color: #191919 !important;
+    color: white !important; 
+}
+
+@media (max-width: 850px) {
+.main-section{
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.logo{
+    font-size: 30px;
+}
+}
